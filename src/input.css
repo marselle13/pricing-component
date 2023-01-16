@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "manrope";
+  src: url(../fonts/Manrope-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "manrope-bold";
+  src: url(../fonts/Manrope-ExtraBold.ttf) format("truetype");
+}
+
+html {
+  font-family: "manrope", sans-serif;
+}
+
+.font-extrabold {
+  font-family: "manrope-bold", sans-serif;
+}
