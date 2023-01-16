@@ -8,6 +8,85 @@
     <title>Pricing Componenet</title>
   </head>
   <body>
-    <h1 class="text-[50px]">hello world!</h1>
+    <header
+      class="bg-pattern grid place-content-center text-center bg-left pt-8 pb-16 bg-no-repeat"
+    >
+      <div
+        class="bg-circle bg-no-repeat bg-center space-y-4 h-[200px] grid place-content-center"
+      >
+        <h1 class="font-extrabold text-lg text-desaturated-blue">
+          Simple, traffic-based pricing
+        </h1>
+        <p class="text-grayish-blue text-sm max-w-[200px] mx-auto">
+          Sign-up for our 30-day trial. No credit card required.
+        </p>
+      </div>
+    </header>
+    <main>
+      <div
+        class="bg-white relative bottom-14 mx-4 rounded pt-12 text-center shadow"
+      >
+        <div class="w-full gap-8 pb-12 grid content-center border-b">
+          <h3
+            class="uppercase text-sm text-grayish-blue font-extrabold tracking-widest"
+          >
+            100k pageviews
+          </h3>
+          <div class="mx-4">
+            <input type="range" class="w-full" min="0" max="100" />
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <h2 class="font-extrabold text-desaturated-blue text-3xl">
+              $16.00
+            </h2>
+            <span class="text-sm text-grayish-blue">/month</span>
+          </div>
+          <div class="flex justify-center items-center gap-4">
+            <p class="text-xs text-grayish-blue">Monthly Billing</p>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer" />
+              <div
+                class="w-12 h-6 bg-light-blue peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[4px] after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-strong-cyan"
+              ></div>
+            </label>
+            <div class="flex items-center gap-4">
+              <p class="text-xs text-grayish-blue">Yearly Billing</p>
+              <span
+                class="text-xs bg-light-red rounded-full bg-opacity-20 text-light-red py-[2px] px-[6px] font-extrabold"
+                >-25%</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="py-8 space-y-8">
+          <ul class="space-y-2">
+            <li
+              class="flex items-center justify-center gap-4 text-xs text-grayish-blue"
+            >
+              <img src="../images/icon-check.svg" alt="" />
+              Unlimited websites
+            </li>
+            <li
+              class="flex items-center justify-center gap-4 text-xs text-grayish-blue"
+            >
+              <img src="../images/icon-check.svg" alt="" />
+              100% data ownership
+            </li>
+            <li
+              class="flex items-center justify-center gap-4 text-xs text-grayish-blue"
+            >
+              <img src="../images/icon-check.svg" alt="" />
+              Email reports
+            </li>
+          </ul>
+          <button
+            class="bg-desaturated-blue px-10 py-3 rounded-full text-xs text-light-blue font-extrabold"
+          >
+            Start my trial
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
