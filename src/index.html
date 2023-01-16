@@ -9,39 +9,49 @@
   </head>
   <body>
     <header
-      class="bg-pattern grid place-content-center text-center bg-left pt-8 pb-16 bg-no-repeat"
+      class="bg-pattern grid place-content-center text-center bg-left pt-8 pb-16 bg-no-repeat lg:bg-center"
     >
       <div
         class="bg-circle bg-no-repeat bg-center space-y-4 h-[200px] grid place-content-center"
       >
-        <h1 class="font-extrabold text-lg text-desaturated-blue">
+        <h1 class="font-extrabold text-lg text-desaturated-blue lg:text-[26px]">
           Simple, traffic-based pricing
         </h1>
-        <p class="text-grayish-blue text-sm max-w-[200px] mx-auto">
+        <p
+          class="text-grayish-blue text-sm max-w-[200px] mx-auto lg:max-w-[350px]"
+        >
           Sign-up for our 30-day trial. No credit card required.
         </p>
       </div>
     </header>
     <main>
       <div
-        class="bg-white relative bottom-14 mx-4 rounded pt-12 text-center shadow"
+        class="bg-white relative bottom-14 mx-4 rounded pt-12 text-center shadow lg:max-w-[540px] lg:mx-auto"
       >
-        <div class="w-full gap-8 pb-12 grid content-center border-b">
-          <h3
-            class="uppercase text-sm text-grayish-blue font-extrabold tracking-widest"
-          >
-            100k pageviews
-          </h3>
-          <div class="mx-4">
-            <input type="range" class="w-full" min="0" max="100" />
+        <div
+          class="w-full gap-8 pb-12 grid content-center border-b lg:grid-cols-2 lg:gap-12"
+        >
+          <div class="self-center">
+            <h3
+              class="uppercase text-sm text-grayish-blue font-extrabold tracking-widest"
+            >
+              100k pageviews
+            </h3>
+          </div>
+          <div class="mx-4 lg:col-span-2 lg:order-3 lg:mx-12">
+            <input type="range" class="w-full rounded-full" min="0" max="100" />
           </div>
           <div class="flex items-center justify-center gap-2">
-            <h2 class="font-extrabold text-desaturated-blue text-3xl">
+            <h2
+              class="font-extrabold text-desaturated-blue text-3xl lg:text-4xl"
+            >
               $16.00
             </h2>
             <span class="text-sm text-grayish-blue">/month</span>
           </div>
-          <div class="flex justify-center items-center gap-4">
+          <div
+            class="flex justify-center items-center gap-4 lg:col-span-2 lg:order-last lg:justify-end lg:mr-16"
+          >
             <p class="text-xs text-grayish-blue">Monthly Billing</p>
             <label class="relative inline-flex items-center cursor-pointer">
               <input type="checkbox" value="" class="sr-only peer" />
@@ -51,14 +61,17 @@
             </label>
             <div class="flex items-center gap-4">
               <p class="text-xs text-grayish-blue">Yearly Billing</p>
+
               <span
-                class="text-xs bg-light-red rounded-full bg-opacity-20 text-light-red py-[2px] px-[6px] font-extrabold"
-                >-25%</span
+                class="text-xs bg-grayish-red rounded-full text-light-red py-[2px] px-[6px] font-extrabold lg:flex"
+                >-25%<span class="hidden lg:flex ml-1"> discount</span></span
               >
             </div>
           </div>
         </div>
-        <div class="py-8 space-y-8">
+        <div
+          class="py-8 space-y-8 lg:flex lg:justify-around lg:items-center lg:space-y-0"
+        >
           <ul class="space-y-2">
             <li
               class="flex items-center justify-center gap-4 text-xs text-grayish-blue"
@@ -79,6 +92,7 @@
               Email reports
             </li>
           </ul>
+
           <button
             class="bg-desaturated-blue px-10 py-3 rounded-full text-xs text-light-blue font-extrabold"
           >
