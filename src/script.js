@@ -28,11 +28,9 @@ class App {
   }
 
   _handleDiscount() {
-    if (!discountInput.checked) {
-      price.textContent = `$${prices[this.val]}.00`;
-    } else {
-      price.textContent = `$${prices[this.val] * 0.75}.00`;
-    }
+    price.textContent = !discountInput.checked
+      ? `$${prices[this.val]}.00`
+      : `$${prices[this.val] * 0.75}.00`;
   }
 }
 const app = new App();
